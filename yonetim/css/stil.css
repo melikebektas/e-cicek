@@ -1,0 +1,146 @@
+@import url("http://fonts.googleapis.com/css?family=Lato:300,400,700");
+@import url("http://netdna.bootstrapcdn.com/font-awesome/4.0.1/css/font-awesome.css");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:before, :after {
+  content: '';
+  display: block;
+  position: absolute;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+body {
+  display: flex;
+  font: 15px/1 Lato, sans-serif;
+  color: #777;
+}
+nav {
+  margin-top:51px;
+  width: 200px;
+  background: #F8F8F8;
+  
+}
+nav ul span {
+  display: block;
+  padding: 15px;
+  color: black;
+  text-transform: uppercase;
+  border-top:1px solid #53779b;
+  border-right:1px solid #53779b;
+  border-bottom: 1px solid #53779b;
+}
+nav ul a {
+  position: relative;
+  display: block;
+  padding: 15px 15px 17px 50px;
+  color:black;
+  border-right:1px solid #53779b;
+  border-bottom: 1px solid #53779b;
+  text-decoration:none;
+}
+nav ul a:hover, {
+  background: #53779b;
+}
+nav ul a:before {
+  font: normal 16px FontAwesome;
+  top: 15px;
+  left: 18px;
+}
+nav > ul > li:nth-child(2) > a:before {
+  content: '\f015';
+}
+nav > ul > li:nth-child(3) > a:before {
+  content: '\f00a';
+}
+nav > ul > li:nth-child(4) > a:before {
+  content: '\f0c3';
+}
+nav > ul > li:nth-child(5) > a:before {
+  content: '\f13c';
+}
+nav > ul > li:nth-child(6) > a:before {
+  content: '\f07a';
+}
+nav > ul > li:nth-child(7) > a:before {
+  content: '\f007';
+}
+nav > ul > li:nth-child(8) > a:before {
+ content: '\f075' ;
+}
+nav > ul > li:nth-child(9) > a:before {
+ content: '\f06b' ;
+}
+nav > ul > li:nth-child(10) > a:before {
+  content: '\f0f6';
+}
+nav > ul > li:nth-child(11) > a:before {
+ content: '\f002' ;
+}
+
+/** sub panel **/
+nav ul li ul {
+  width:250px;
+  margin-left:-250px;
+  opacity:0;
+  margin-top:-50px;
+  position:absolute;
+  visibility:hidden;
+    -webkit-transition:0.3s;
+   -moz-transition:0.3s;
+   -ms-transition:0.3s;
+   -o-transition:0.3s;
+   transition:0.3s;
+}
+nav ul li:hover ul {
+  background-color:#53779b;
+  margin-left:200px;
+  margin-top:-48px;
+  visibility:visible;
+  opacity:1;
+   -webkit-transition:0.3s;
+   -moz-transition:0.3s;
+   -ms-transition:0.3s;
+   -o-transition:0.3s;
+   transition:0.3s;
+}
+nav ul li ul li {
+  background-color:#53779b;
+  list-style:none;
+}
+nav ul li ul li:hover {
+  width:250px;
+  background-color:#53779b;
+}
+nav ul li ul a {
+  display: block;
+  text-align:center;
+  color: #fff;
+  padding: 15px 15px 17px 0px;
+  border-bottom: 1px solid #4a6a8a;
+}
+nav ul li ul a:hover {
+  position: relative;
+  display: block;
+  background-color:#4a6a8a;
+  color: #fff;
+}
+.icerik{
+    
+    width:auto;
+    height:auto;
+    background-color:#fff;
+   
+    top: 75px;
+    left: 225px;
+    
+    border:1px solid #4a6a8a;
+   
+    
+}

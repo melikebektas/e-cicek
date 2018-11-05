@@ -1,0 +1,72 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Bayi.master.cs" Inherits="AspCicekci.kurumsal.Bayi" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+   <link href="StyleSheet1.css" rel="stylesheet" />
+      <style type="text/css">
+        #nav{width:500px;
+            margin:auto;}
+            
+    #nav ul{
+    padding:0px;
+    list-style:none;
+    }
+    #nav ul li{float:left;
+    text-align:center;
+    width:120px;
+    margin:1px;
+    }#nav ul li a{
+         color:#fff;
+         text-decoration:none;
+         font-family:Calibri;
+         background:#3e8924;
+        display:block;
+         padding:10px;
+     }#nav ul li a:hover{
+          background:#0e0;
+          color:#000;
+      }
+      #nav ul li ul {display:none;}
+     
+      #nav ul li:hover ul {
+          display: block;
+      }
+          .auto-style1 {
+              height: 92px;
+              position: absolute;
+              top: 15px;
+              left: 544px;
+          }
+  </style>
+   
+</head>
+<body >
+    
+    <form id="form1" runat="server">
+    <div id="nav" class="div" style="z-index: 1">
+    <ul>
+       <li><a href="Bayi.aspx" > Kurumsal</a>  </li>
+        <li><a href="Yorumlar.aspx" > Yorumlar</a>  </li>
+        <li><a href="Raporlama.aspx" > Raporla</a>  </li>
+        <li><a href="" > Ürün</a>  
+        <ul>
+            <li><a href="UrunDuzenle.aspx" > Ürün Düzele</a>  </li>
+            <li><a href="UrunEkle.aspx" > Ürün Ekle</a>  </li>
+        </ul>
+            </li>
+    </ul>
+    </div>
+    <p>
+        &nbsp;</p>
+   
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        </asp:ContentPlaceHolder>
+    </form>
+       
+   
+    
+        </body>
+</html>

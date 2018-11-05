@@ -1,0 +1,966 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props" Condition="Exists('..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{487CFFBE-99D6-425A-A784-B09633B46A53}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>AspCicekci</RootNamespace>
+    <AssemblyName>AspCicekci</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.ReportViewer.WebForms, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="AliciKayit.aspx" />
+    <Content Include="Arama.aspx" />
+    <Content Include="BireyselKargoTakibi.aspx" />
+    <Content Include="BireyselUyeKayit.aspx" />
+    <Content Include="kurumsal\Bayi.aspx" />
+    <Content Include="kurumsal\BayiGiris.aspx" />
+    <Content Include="kurumsal\images\1494259211_user_profile.png" />
+    <Content Include="kurumsal\images\3.png" />
+    <Content Include="kurumsal\images\4.png" />
+    <Content Include="kurumsal\images\46.PNG" />
+    <Content Include="kurumsal\images\araçubuk.png" />
+    <Content Include="kurumsal\images\banner.png" />
+    <Content Include="kurumsal\images\bannerson.png" />
+    <Content Include="kurumsal\images\basket-icon-71412.png" />
+    <Content Include="kurumsal\images\cicekler\3.jpg" />
+    <Content Include="kurumsal\images\cicekler\anasayfabonnyfood.png" />
+    <Content Include="kurumsal\images\cicekler\anasayfadogumgunu.png" />
+    <Content Include="kurumsal\images\cicekler\Anasayfadogumgünüü.png" />
+    <Content Include="kurumsal\images\cicekler\anasayfakisiyeozel.png" />
+    <Content Include="kurumsal\images\cicekler\anasayfameyvesepeti.png" />
+    <Content Include="kurumsal\images\cicekler\baharindirimi.png" />
+    <Content Include="kurumsal\images\cicekler\butikcicekler.png" />
+    <Content Include="kurumsal\images\cicekler\cicekler\1.jpg" />
+    <Content Include="kurumsal\images\cicekler\cicekler\10.jpg" />
+    <Content Include="kurumsal\images\cicekler\cicekler\11.jpg" />
+    <Content Include="kurumsal\images\cicekler\cicekler\12.jpg" />
+    <Content Include="kurumsal\images\cicekler\cicekler\13.jpg" />
+    <Content Include="kurumsal\images\cicekler\cicekler\14.jpg" />
+    <Content Include="kurumsal\images\cicekler\cicekler\15.jpg" />
+    <Content Include="kurumsal\images\cicekler\cicekler\16.jpg" />
+    <Content Include="kurumsal\images\cicekler\cicekler\17.jpg" />
+    <Content Include="kurumsal\images\cicekler\cicekler\18.jpg" />
+    <Content Include="kurumsal\images\cicekler\cicekler\19.jpg" />
+    <Content Include="kurumsal\images\cicekler\cicekler\2.jpg" />
+    <Content Include="kurumsal\images\cicekler\cicekler\20.jpg" />
+    <Content Include="kurumsal\images\cicekler\cicekler\21.jpg" />
+    <Content Include="kurumsal\images\cicekler\cicekler\22.jpg" />
+    <Content Include="kurumsal\images\cicekler\cicekler\23.jpg" />
+    <Content Include="kurumsal\images\cicekler\cicekler\24.jpg" />
+    <Content Include="kurumsal\images\cicekler\cicekler\25.jpg" />
+    <Content Include="kurumsal\images\cicekler\cicekler\26.jpg" />
+    <Content Include="kurumsal\images\cicekler\cicekler\27.jpg" />
+    <Content Include="kurumsal\images\cicekler\cicekler\28.jpg" />
+    <Content Include="kurumsal\images\cicekler\cicekler\29.jpg" />
+    <Content Include="kurumsal\images\cicekler\cicekler\3.jpg" />
+    <Content Include="kurumsal\images\cicekler\cicekler\30.jpg" />
+    <Content Include="kurumsal\images\cicekler\cicekler\31.jpg" />
+    <Content Include="kurumsal\images\cicekler\cicekler\32.jpg" />
+    <Content Include="kurumsal\images\cicekler\cicekler\33.jpg" />
+    <Content Include="kurumsal\images\cicekler\cicekler\34.jpg" />
+    <Content Include="kurumsal\images\cicekler\cicekler\35.jpg" />
+    <Content Include="kurumsal\images\cicekler\cicekler\36.jpg" />
+    <Content Include="kurumsal\images\cicekler\cicekler\37.jpg" />
+    <Content Include="kurumsal\images\cicekler\cicekler\38.jpg" />
+    <Content Include="kurumsal\images\cicekler\cicekler\39.jpg" />
+    <Content Include="kurumsal\images\cicekler\cicekler\4.jpg" />
+    <Content Include="kurumsal\images\cicekler\cicekler\40.jpg" />
+    <Content Include="kurumsal\images\cicekler\cicekler\41.jpg" />
+    <Content Include="kurumsal\images\cicekler\cicekler\42.jpg" />
+    <Content Include="kurumsal\images\cicekler\cicekler\43.jpg" />
+    <Content Include="kurumsal\images\cicekler\cicekler\44.jpg" />
+    <Content Include="kurumsal\images\cicekler\cicekler\45.jpg" />
+    <Content Include="kurumsal\images\cicekler\cicekler\46.jpg" />
+    <Content Include="kurumsal\images\cicekler\cicekler\47.jpg" />
+    <Content Include="kurumsal\images\cicekler\cicekler\48.jpg" />
+    <Content Include="kurumsal\images\cicekler\cicekler\49.jpg" />
+    <Content Include="kurumsal\images\cicekler\cicekler\5.jpg" />
+    <Content Include="kurumsal\images\cicekler\cicekler\50.jpg" />
+    <Content Include="kurumsal\images\cicekler\cicekler\6.jpg" />
+    <Content Include="kurumsal\images\cicekler\cicekler\7.jpg" />
+    <Content Include="kurumsal\images\cicekler\cicekler\8.jpg" />
+    <Content Include="kurumsal\images\cicekler\cicekler\9.jpg" />
+    <Content Include="kurumsal\images\cicekler\enyeni.png" />
+    <Content Include="kurumsal\images\ekurun\anne.jpg" />
+    <Content Include="kurumsal\images\ekurun\demir-kolye.jpg" />
+    <Content Include="kurumsal\images\ekurun\gumus-kolye.jpg" />
+    <Content Include="kurumsal\images\ekurun\kuran-ı kerim.jpg" />
+    <Content Include="kurumsal\images\ekurun\metinli-rakarift.jpg" />
+    <Content Include="kurumsal\images\ekurun\oscar.jpg" />
+    <Content Include="kurumsal\images\facebookimages.png" />
+    <Content Include="kurumsal\images\follower-user-man-login-128.png" />
+    <Content Include="kurumsal\images\footer.png" />
+    <Content Include="kurumsal\images\Footerr %281%29.png" />
+    <Content Include="kurumsal\images\F_icon.png" />
+    <Content Include="kurumsal\images\gerioku1.png" />
+    <Content Include="kurumsal\images\Hediye.png" />
+    <Content Include="kurumsal\images\ileri.png" />
+    <Content Include="kurumsal\images\kargoicon.png" />
+    <Content Include="kurumsal\images\kisiyeozel\1.PNG" />
+    <Content Include="kurumsal\images\kisiyeozel\10.PNG" />
+    <Content Include="kurumsal\images\kisiyeozel\11.PNG" />
+    <Content Include="kurumsal\images\kisiyeozel\12.PNG" />
+    <Content Include="kurumsal\images\kisiyeozel\13.PNG" />
+    <Content Include="kurumsal\images\kisiyeozel\14.PNG" />
+    <Content Include="kurumsal\images\kisiyeozel\15.PNG" />
+    <Content Include="kurumsal\images\kisiyeozel\16.PNG" />
+    <Content Include="kurumsal\images\kisiyeozel\17.PNG" />
+    <Content Include="kurumsal\images\kisiyeozel\19.PNG" />
+    <Content Include="kurumsal\images\kisiyeozel\2.PNG" />
+    <Content Include="kurumsal\images\kisiyeozel\20.PNG" />
+    <Content Include="kurumsal\images\kisiyeozel\21.PNG" />
+    <Content Include="kurumsal\images\kisiyeozel\22.PNG" />
+    <Content Include="kurumsal\images\kisiyeozel\23.PNG" />
+    <Content Include="kurumsal\images\kisiyeozel\24.PNG" />
+    <Content Include="kurumsal\images\kisiyeozel\25.jpg" />
+    <Content Include="kurumsal\images\kisiyeozel\25.PNG" />
+    <Content Include="kurumsal\images\kisiyeozel\26.jpg" />
+    <Content Include="kurumsal\images\kisiyeozel\26.PNG" />
+    <Content Include="kurumsal\images\kisiyeozel\3.PNG" />
+    <Content Include="kurumsal\images\kisiyeozel\4.PNG" />
+    <Content Include="kurumsal\images\kisiyeozel\5.PNG" />
+    <Content Include="kurumsal\images\kisiyeozel\6.PNG" />
+    <Content Include="kurumsal\images\kisiyeozel\7.PNG" />
+    <Content Include="kurumsal\images\kisiyeozel\8.PNG" />
+    <Content Include="kurumsal\images\kisiyeozel\9.PNG" />
+    <Content Include="kurumsal\images\login-512.gif" />
+    <Content Include="kurumsal\images\loginbannerr.png" />
+    <Content Include="kurumsal\images\Login_in.png" />
+    <Content Include="kurumsal\images\Login_out.png" />
+    <Content Include="kurumsal\images\logout.png" />
+    <Content Include="kurumsal\images\meyvesepeti\1.PNG" />
+    <Content Include="kurumsal\images\meyvesepeti\10.PNG" />
+    <Content Include="kurumsal\images\meyvesepeti\11.PNG" />
+    <Content Include="kurumsal\images\meyvesepeti\12.PNG" />
+    <Content Include="kurumsal\images\meyvesepeti\13.PNG" />
+    <Content Include="kurumsal\images\meyvesepeti\14.PNG" />
+    <Content Include="kurumsal\images\meyvesepeti\2.PNG" />
+    <Content Include="kurumsal\images\meyvesepeti\3.PNG" />
+    <Content Include="kurumsal\images\meyvesepeti\4.PNG" />
+    <Content Include="kurumsal\images\meyvesepeti\5.PNG" />
+    <Content Include="kurumsal\images\meyvesepeti\6.PNG" />
+    <Content Include="kurumsal\images\meyvesepeti\7.PNG" />
+    <Content Include="kurumsal\images\meyvesepeti\8.PNG" />
+    <Content Include="kurumsal\images\meyvesepeti\9.PNG" />
+    <Content Include="kurumsal\images\note.png" />
+    <Content Include="kurumsal\images\Search Black.png" />
+    <Content Include="kurumsal\images\Search-icon.png" />
+    <Content Include="kurumsal\images\sepet.png" />
+    <Content Include="kurumsal\images\sepett.png" />
+    <Content Include="kurumsal\images\takvim.png" />
+    <Content Include="kurumsal\images\truck-icon %281%29.png" />
+    <Content Include="kurumsal\images\urunler.png" />
+    <Content Include="kurumsal\images\ustbanner.png" />
+    <Content Include="kurumsal\images\yenilebilir\1.PNG" />
+    <Content Include="kurumsal\images\yenilebilir\10.PNG" />
+    <Content Include="kurumsal\images\yenilebilir\11.PNG" />
+    <Content Include="kurumsal\images\yenilebilir\12.PNG" />
+    <Content Include="kurumsal\images\yenilebilir\13.PNG" />
+    <Content Include="kurumsal\images\yenilebilir\14.PNG" />
+    <Content Include="kurumsal\images\yenilebilir\15.PNG" />
+    <Content Include="kurumsal\images\yenilebilir\16.PNG" />
+    <Content Include="kurumsal\images\yenilebilir\17.PNG" />
+    <Content Include="kurumsal\images\yenilebilir\18.PNG" />
+    <Content Include="kurumsal\images\yenilebilir\19.PNG" />
+    <Content Include="kurumsal\images\yenilebilir\2.PNG" />
+    <Content Include="kurumsal\images\yenilebilir\20.PNG" />
+    <Content Include="kurumsal\images\yenilebilir\21.PNG" />
+    <Content Include="kurumsal\images\yenilebilir\22.PNG" />
+    <Content Include="kurumsal\images\yenilebilir\23.PNG" />
+    <Content Include="kurumsal\images\yenilebilir\24.PNG" />
+    <Content Include="kurumsal\images\yenilebilir\25.PNG" />
+    <Content Include="kurumsal\images\yenilebilir\26.PNG" />
+    <Content Include="kurumsal\images\yenilebilir\27.PNG" />
+    <Content Include="kurumsal\images\yenilebilir\28.PNG" />
+    <Content Include="kurumsal\images\yenilebilir\29.PNG" />
+    <Content Include="kurumsal\images\yenilebilir\3.PNG" />
+    <Content Include="kurumsal\images\yenilebilir\30.PNG" />
+    <Content Include="kurumsal\images\yenilebilir\31.PNG" />
+    <Content Include="kurumsal\images\yenilebilir\32.PNG" />
+    <Content Include="kurumsal\images\yenilebilir\33.PNG" />
+    <Content Include="kurumsal\images\yenilebilir\34.PNG" />
+    <Content Include="kurumsal\images\yenilebilir\4.PNG" />
+    <Content Include="kurumsal\images\yenilebilir\5.PNG" />
+    <Content Include="kurumsal\images\yenilebilir\6.PNG" />
+    <Content Include="kurumsal\images\yenilebilir\7.PNG" />
+    <Content Include="kurumsal\images\yenilebilir\8.PNG" />
+    <Content Include="kurumsal\images\yenilebilir\9.PNG" />
+    <Content Include="kurumsal\images\zoom-search-2-icon.png" />
+    <Content Include="kurumsal\Raporlama.aspx" />
+    <Content Include="kurumsal\Resimler\bahce.gif" />
+    <Content Include="kurumsal\Resimler\cicek.gif" />
+    <Content Include="kurumsal\Resimler\cicek2.gif" />
+    <Content Include="kurumsal\Resimler\cicek3.gif" />
+    <Content Include="kurumsal\Resimler\cicekkk.png" />
+    <Content Include="kurumsal\Resimler\images %281%29.jpg" />
+    <Content Include="kurumsal\Resimler\images.jpg" />
+    <Content Include="kurumsal\Resimler\images.png" />
+    <Content Include="kurumsal\Resimler\indir.jpg" />
+    <Content Include="kurumsal\Resimler\orkide.gif" />
+    <Content Include="kurumsal\Resimler\papatya.gif" />
+    <Content Include="kurumsal\Resimler\papatya1.gif" />
+    <Content Include="kurumsal\Resimler\sarı.jpg" />
+    <Content Include="kurumsal\Resimler\yepyeni-hana-cicek.jpg" />
+    <Content Include="kurumsal\SifremiUnuttum.aspx" />
+    <Content Include="kurumsal\UrunDuzenle.aspx" />
+    <Content Include="kurumsal\UrunEkle.aspx" />
+    <Content Include="kurumsal\Yorumlar.aspx" />
+    <Content Include="Resimler\bahce.gif" />
+    <Content Include="Resimler\cicek.gif" />
+    <Content Include="Resimler\cicek2.gif" />
+    <Content Include="Resimler\cicekkk.png" />
+    <Content Include="Resimler\images %281%29.jpg" />
+    <Content Include="Resimler\images.jpg" />
+    <Content Include="Resimler\images.png" />
+    <Content Include="Resimler\indir.jpg" />
+    <Content Include="Resimler\orkide.gif" />
+    <Content Include="Resimler\papatya.gif" />
+    <Content Include="Resimler\papatya1.gif" />
+    <Content Include="Resimler\sarı.jpg" />
+    <Content Include="Resimler\yepyeni-hana-cicek.jpg" />
+    <Content Include="kurumsal\StyleSheet1.css" />
+    <Content Include="SatisSayfasi.aspx" />
+    <Content Include="ButikCicekler.aspx" />
+    <Content Include="Cicekler1.aspx" />
+    <Content Include="giris.css" />
+    <Content Include="images\1494259211_user_profile.png" />
+    <Content Include="images\3.png" />
+    <Content Include="images\4.png" />
+    <Content Include="images\araçubuk.png" />
+    <Content Include="images\cicekler\Anasayfadogumgünüü.png" />
+    <Content Include="images\banner.png" />
+    <Content Include="images\bannerson.png" />
+    <Content Include="images\basket-icon-71412.png" />
+    <Content Include="images\46.PNG" />
+    <Content Include="images\cicekler\3.jpg" />
+    <Content Include="images\cicekler\anasayfabonnyfood.png" />
+    <Content Include="images\cicekler\anasayfadogumgunu.png" />
+    <Content Include="images\cicekler\anasayfakisiyeozel.png" />
+    <Content Include="images\cicekler\anasayfameyvesepeti.png" />
+    <Content Include="images\cicekler\baharindirimi.png" />
+    <Content Include="images\cicekler\butikcicekler.png" />
+    <Content Include="images\cicekler\cicekler\1.jpg" />
+    <Content Include="images\cicekler\cicekler\10.jpg" />
+    <Content Include="images\cicekler\cicekler\11.jpg" />
+    <Content Include="images\cicekler\cicekler\12.jpg" />
+    <Content Include="images\cicekler\cicekler\13.jpg" />
+    <Content Include="images\cicekler\cicekler\14.jpg" />
+    <Content Include="images\cicekler\cicekler\15.jpg" />
+    <Content Include="images\cicekler\cicekler\16.jpg" />
+    <Content Include="images\cicekler\cicekler\17.jpg" />
+    <Content Include="images\cicekler\cicekler\18.jpg" />
+    <Content Include="images\cicekler\cicekler\19.jpg" />
+    <Content Include="images\cicekler\cicekler\2.jpg" />
+    <Content Include="images\cicekler\cicekler\20.jpg" />
+    <Content Include="images\cicekler\cicekler\21.jpg" />
+    <Content Include="images\cicekler\cicekler\22.jpg" />
+    <Content Include="images\cicekler\cicekler\23.jpg" />
+    <Content Include="images\cicekler\cicekler\24.jpg" />
+    <Content Include="images\cicekler\cicekler\25.jpg" />
+    <Content Include="images\cicekler\cicekler\26.jpg" />
+    <Content Include="images\cicekler\cicekler\27.jpg" />
+    <Content Include="images\cicekler\cicekler\28.jpg" />
+    <Content Include="images\cicekler\cicekler\29.jpg" />
+    <Content Include="images\cicekler\cicekler\3.jpg" />
+    <Content Include="images\cicekler\cicekler\30.jpg" />
+    <Content Include="images\cicekler\cicekler\31.jpg" />
+    <Content Include="images\cicekler\cicekler\32.jpg" />
+    <Content Include="images\cicekler\cicekler\33.jpg" />
+    <Content Include="images\cicekler\cicekler\34.jpg" />
+    <Content Include="images\cicekler\cicekler\35.jpg" />
+    <Content Include="images\cicekler\cicekler\36.jpg" />
+    <Content Include="images\cicekler\cicekler\37.jpg" />
+    <Content Include="images\cicekler\cicekler\38.jpg" />
+    <Content Include="images\cicekler\cicekler\39.jpg" />
+    <Content Include="images\cicekler\cicekler\4.jpg" />
+    <Content Include="images\cicekler\cicekler\40.jpg" />
+    <Content Include="images\cicekler\cicekler\41.jpg" />
+    <Content Include="images\cicekler\cicekler\42.jpg" />
+    <Content Include="images\cicekler\cicekler\43.jpg" />
+    <Content Include="images\cicekler\cicekler\44.jpg" />
+    <Content Include="images\cicekler\cicekler\45.jpg" />
+    <Content Include="images\cicekler\cicekler\46.jpg" />
+    <Content Include="images\cicekler\cicekler\47.jpg" />
+    <Content Include="images\cicekler\cicekler\48.jpg" />
+    <Content Include="images\cicekler\cicekler\49.jpg" />
+    <Content Include="images\cicekler\cicekler\5.jpg" />
+    <Content Include="images\cicekler\cicekler\50.jpg" />
+    <Content Include="images\cicekler\cicekler\6.jpg" />
+    <Content Include="images\cicekler\cicekler\7.jpg" />
+    <Content Include="images\cicekler\cicekler\8.jpg" />
+    <Content Include="images\cicekler\cicekler\9.jpg" />
+    <Content Include="images\ekurun\anne.jpg" />
+    <Content Include="images\ekurun\demir-kolye.jpg" />
+    <Content Include="images\ekurun\gumus-kolye.jpg" />
+    <Content Include="images\ekurun\kuran-ı kerim.jpg" />
+    <Content Include="images\ekurun\metinli-rakarift.jpg" />
+    <Content Include="images\ekurun\oscar.jpg" />
+    <Content Include="images\cicekler\enyeni.png" />
+    <Content Include="images\facebookimages.png" />
+    <Content Include="images\follower-user-man-login-128.png" />
+    <Content Include="images\footer.png" />
+    <Content Include="images\Footerr %281%29.png" />
+    <Content Include="images\F_icon.png" />
+    <Content Include="images\gerioku1.png" />
+    <Content Include="images\Hediye.png" />
+    <Content Include="images\ileri.png" />
+    <Content Include="images\kargoicon.png" />
+    <Content Include="images\kisiyeozel\1.PNG" />
+    <Content Include="images\kisiyeozel\10.PNG" />
+    <Content Include="images\kisiyeozel\11.PNG" />
+    <Content Include="images\kisiyeozel\12.PNG" />
+    <Content Include="images\kisiyeozel\13.PNG" />
+    <Content Include="images\kisiyeozel\14.PNG" />
+    <Content Include="images\kisiyeozel\15.PNG" />
+    <Content Include="images\kisiyeozel\16.PNG" />
+    <Content Include="images\kisiyeozel\17.PNG" />
+    <Content Include="images\kisiyeozel\19.PNG" />
+    <Content Include="images\kisiyeozel\2.PNG" />
+    <Content Include="images\kisiyeozel\20.PNG" />
+    <Content Include="images\kisiyeozel\21.PNG" />
+    <Content Include="images\kisiyeozel\22.PNG" />
+    <Content Include="images\kisiyeozel\23.PNG" />
+    <Content Include="images\kisiyeozel\24.PNG" />
+    <Content Include="images\kisiyeozel\25.jpg" />
+    <Content Include="images\kisiyeozel\25.PNG" />
+    <Content Include="images\kisiyeozel\26.jpg" />
+    <Content Include="images\kisiyeozel\26.PNG" />
+    <Content Include="images\kisiyeozel\3.PNG" />
+    <Content Include="images\kisiyeozel\4.PNG" />
+    <Content Include="images\kisiyeozel\5.PNG" />
+    <Content Include="images\kisiyeozel\6.PNG" />
+    <Content Include="images\kisiyeozel\7.PNG" />
+    <Content Include="images\kisiyeozel\8.PNG" />
+    <Content Include="images\kisiyeozel\9.PNG" />
+    <Content Include="images\login-512.gif" />
+    <Content Include="images\loginbannerr.png" />
+    <Content Include="images\Login_in.png" />
+    <Content Include="images\Login_out.png" />
+    <Content Include="images\logout.png" />
+    <Content Include="images\meyvesepeti\1.PNG" />
+    <Content Include="images\meyvesepeti\10.PNG" />
+    <Content Include="images\meyvesepeti\11.PNG" />
+    <Content Include="images\meyvesepeti\12.PNG" />
+    <Content Include="images\meyvesepeti\13.PNG" />
+    <Content Include="images\meyvesepeti\14.PNG" />
+    <Content Include="images\meyvesepeti\2.PNG" />
+    <Content Include="images\meyvesepeti\3.PNG" />
+    <Content Include="images\meyvesepeti\4.PNG" />
+    <Content Include="images\meyvesepeti\5.PNG" />
+    <Content Include="images\meyvesepeti\6.PNG" />
+    <Content Include="images\meyvesepeti\7.PNG" />
+    <Content Include="images\meyvesepeti\8.PNG" />
+    <Content Include="images\meyvesepeti\9.PNG" />
+    <Content Include="images\note.png" />
+    <Content Include="images\Search Black.png" />
+    <Content Include="images\Search-icon.png" />
+    <Content Include="images\sepet.png" />
+    <Content Include="images\sepett.png" />
+    <Content Include="images\takvim.png" />
+    <Content Include="images\truck-icon %281%29.png" />
+    <Content Include="images\urunler.png" />
+    <Content Include="images\ustbanner.png" />
+    <Content Include="images\yenilebilir\1.PNG" />
+    <Content Include="images\yenilebilir\10.PNG" />
+    <Content Include="images\yenilebilir\11.PNG" />
+    <Content Include="images\yenilebilir\12.PNG" />
+    <Content Include="images\yenilebilir\13.PNG" />
+    <Content Include="images\yenilebilir\14.PNG" />
+    <Content Include="images\yenilebilir\15.PNG" />
+    <Content Include="images\yenilebilir\16.PNG" />
+    <Content Include="images\yenilebilir\17.PNG" />
+    <Content Include="images\yenilebilir\18.PNG" />
+    <Content Include="images\yenilebilir\19.PNG" />
+    <Content Include="images\yenilebilir\2.PNG" />
+    <Content Include="images\yenilebilir\20.PNG" />
+    <Content Include="images\yenilebilir\21.PNG" />
+    <Content Include="images\yenilebilir\22.PNG" />
+    <Content Include="images\yenilebilir\23.PNG" />
+    <Content Include="images\yenilebilir\24.PNG" />
+    <Content Include="images\yenilebilir\25.PNG" />
+    <Content Include="images\yenilebilir\26.PNG" />
+    <Content Include="images\yenilebilir\27.PNG" />
+    <Content Include="images\yenilebilir\28.PNG" />
+    <Content Include="images\yenilebilir\29.PNG" />
+    <Content Include="images\yenilebilir\3.PNG" />
+    <Content Include="images\yenilebilir\30.PNG" />
+    <Content Include="images\yenilebilir\31.PNG" />
+    <Content Include="images\yenilebilir\32.PNG" />
+    <Content Include="images\yenilebilir\33.PNG" />
+    <Content Include="images\yenilebilir\34.PNG" />
+    <Content Include="images\yenilebilir\4.PNG" />
+    <Content Include="images\yenilebilir\5.PNG" />
+    <Content Include="images\yenilebilir\6.PNG" />
+    <Content Include="images\yenilebilir\7.PNG" />
+    <Content Include="images\yenilebilir\8.PNG" />
+    <Content Include="images\yenilebilir\9.PNG" />
+    <Content Include="images\zoom-search-2-icon.png" />
+    <Content Include="KargoTakibi.aspx" />
+    <Content Include="KurumsalUyeKayit.aspx" />
+    <Content Include="Login.aspx" />
+    <Content Include="MailGonder.aspx" />
+    <Content Include="MeyveSepeti.aspx" />
+    <Content Include="MisafirKargoTakibi.aspx" />
+    <Content Include="MisafirAliciKayit.aspx" />
+    <Content Include="OdemeSayfası.aspx" />
+    <Content Include="Ozellikler.aspx" />
+    <Content Include="packages.config" />
+    <Content Include="CicekciSablon.Master" />
+    <Content Include="sablon_stil.css" />
+    <Content Include="SatinAlGiris.aspx" />
+    <Content Include="Satis.aspx" />
+    <Content Include="SifreGuncelle.aspx" />
+    <Content Include="SiparisOnaylama.aspx" />
+    <Content Include="stil.css" />
+    <Content Include="style1.css" />
+    <Content Include="UyelikBilgileri.aspx" />
+    <Content Include="uyelik_sözlesmesi.aspx" />
+    <Content Include="kurumsal\Bayi.Master" />
+    <Content Include="yonetim\AdminDuzenle.aspx" />
+    <Content Include="yonetim\AdminEkle.aspx" />
+    <Content Include="yonetim\AdminGoruntule.aspx" />
+    <Content Include="yonetim\AdminLogin.aspx" />
+    <Content Include="yonetim\Anasayfa.aspx" />
+    <Content Include="yonetim\Bayiler.aspx" />
+    <Content Include="yonetim\css\bootstrap-theme.css" />
+    <Content Include="yonetim\css\bootstrap-theme.min.css" />
+    <Content Include="yonetim\css\bootstrap.css" />
+    <Content Include="yonetim\css\bootstrap.min.css" />
+    <Content Include="yonetim\css\stil.css" />
+    <Content Include="yonetim\css\stil2.css" />
+    <Content Include="yonetim\Filtreleme.aspx" />
+    <Content Include="yonetim\images\admin.png" />
+    <Content Include="yonetim\images\admin1.png" />
+    <Content Include="yonetim\images\adminekle.png" />
+    <Content Include="yonetim\images\arkaplan.jpg" />
+    <Content Include="yonetim\images\back.png" />
+    <Content Include="yonetim\images\bayiler.PNG" />
+    <Content Include="yonetim\images\carpi.jpg" />
+    <Content Include="yonetim\images\cicekcim.PNG" />
+    <Content Include="yonetim\images\date.jpg" />
+    <Content Include="yonetim\images\date1.png" />
+    <Content Include="yonetim\images\footer.png" />
+    <Content Include="yonetim\images\mail.png" />
+    <Content Include="yonetim\images\onay.png" />
+    <Content Include="yonetim\images\plus1.png" />
+    <Content Include="yonetim\images\siparisler.PNG" />
+    <Content Include="yonetim\images\yorum.png" />
+    <Content Include="yonetim\images\yorumlar.PNG" />
+    <Content Include="yonetim\Kategoriler.aspx" />
+    <Content Include="yonetim\MailSend.aspx" />
+    <Content Include="yonetim\Musteriler.aspx" />
+    <Content Include="yonetim\Rapor.aspx" />
+    <Content Include="yonetim\SifremiUnuttum.aspx" />
+    <Content Include="yonetim\Siparisler.aspx" />
+    <Content Include="yonetim\Urunler.aspx" />
+    <Content Include="yonetim\Yorumlar.aspx" />
+    <Content Include="yonetim\yorumOnayla.aspx" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <Content Include="yonetim\css\bootstrap-theme.css.map" />
+    <Content Include="yonetim\css\bootstrap-theme.min.css.map" />
+    <Content Include="yonetim\css\bootstrap.css.map" />
+    <Content Include="yonetim\css\bootstrap.min.css.map" />
+    <Content Include="yonetim\Admin.Master" />
+    <Content Include="yonetim\DataSet1.xsc">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </Content>
+    <None Include="yonetim\DataSet1.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet1.Designer.cs</LastGenOutput>
+    </None>
+    <Content Include="yonetim\DataSet1.xss">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Aksesuar.aspx" />
+    <Content Include="Default.aspx" />
+    <Content Include="menu\index.html" />
+    <Content Include="menu\stil.css" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Cicekler.aspx" />
+    <Content Include="YenilebilirCicekler1.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Aksesuar.aspx.cs">
+      <DependentUpon>Aksesuar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Aksesuar.aspx.designer.cs">
+      <DependentUpon>Aksesuar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AliciKayit.aspx.cs">
+      <DependentUpon>AliciKayit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AliciKayit.aspx.designer.cs">
+      <DependentUpon>AliciKayit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Arama.aspx.cs">
+      <DependentUpon>Arama.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Arama.aspx.designer.cs">
+      <DependentUpon>Arama.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BireyselKargoTakibi.aspx.cs">
+      <DependentUpon>BireyselKargoTakibi.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BireyselKargoTakibi.aspx.designer.cs">
+      <DependentUpon>BireyselKargoTakibi.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BireyselUyeKayit.aspx.cs">
+      <DependentUpon>BireyselUyeKayit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BireyselUyeKayit.aspx.designer.cs">
+      <DependentUpon>BireyselUyeKayit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Connection.cs" />
+    <Compile Include="kurumsal\Bayi.aspx.cs">
+      <DependentUpon>Bayi.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="kurumsal\Bayi.aspx.designer.cs">
+      <DependentUpon>Bayi.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="kurumsal\Bayi.Master.cs">
+      <DependentUpon>Bayi.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="kurumsal\Bayi.Master.designer.cs">
+      <DependentUpon>Bayi.Master</DependentUpon>
+    </Compile>
+    <Compile Include="kurumsal\BayiGiris.aspx.cs">
+      <DependentUpon>BayiGiris.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="kurumsal\BayiGiris.aspx.designer.cs">
+      <DependentUpon>BayiGiris.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="kurumsal\Raporlama.aspx.cs">
+      <DependentUpon>Raporlama.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="kurumsal\Raporlama.aspx.designer.cs">
+      <DependentUpon>Raporlama.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="kurumsal\SifremiUnuttum.aspx.cs">
+      <DependentUpon>SifremiUnuttum.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="kurumsal\SifremiUnuttum.aspx.designer.cs">
+      <DependentUpon>SifremiUnuttum.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="kurumsal\UrunDuzenle.aspx.cs">
+      <DependentUpon>UrunDuzenle.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="kurumsal\UrunDuzenle.aspx.designer.cs">
+      <DependentUpon>UrunDuzenle.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="kurumsal\UrunEkle.aspx.cs">
+      <DependentUpon>UrunEkle.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="kurumsal\UrunEkle.aspx.designer.cs">
+      <DependentUpon>UrunEkle.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="kurumsal\Yorumlar.aspx.cs">
+      <DependentUpon>Yorumlar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="kurumsal\Yorumlar.aspx.designer.cs">
+      <DependentUpon>Yorumlar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SatisSayfasi.aspx.cs">
+      <DependentUpon>SatisSayfasi.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SatisSayfasi.aspx.designer.cs">
+      <DependentUpon>SatisSayfasi.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ButikCicekler.aspx.cs">
+      <DependentUpon>ButikCicekler.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ButikCicekler.aspx.designer.cs">
+      <DependentUpon>ButikCicekler.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CicekciSablon.Master.cs">
+      <DependentUpon>CicekciSablon.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CicekciSablon.Master.designer.cs">
+      <DependentUpon>CicekciSablon.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Cicekler1.aspx.cs">
+      <DependentUpon>Cicekler1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Cicekler1.aspx.designer.cs">
+      <DependentUpon>Cicekler1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="KargoTakibi.aspx.cs">
+      <DependentUpon>KargoTakibi.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="KargoTakibi.aspx.designer.cs">
+      <DependentUpon>KargoTakibi.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="KurumsalUyeKayit.aspx.cs">
+      <DependentUpon>KurumsalUyeKayit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="KurumsalUyeKayit.aspx.designer.cs">
+      <DependentUpon>KurumsalUyeKayit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MailGonder.aspx.cs">
+      <DependentUpon>MailGonder.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MailGonder.aspx.designer.cs">
+      <DependentUpon>MailGonder.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MeyveSepeti.aspx.cs">
+      <DependentUpon>MeyveSepeti.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MeyveSepeti.aspx.designer.cs">
+      <DependentUpon>MeyveSepeti.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MisafirKargoTakibi.aspx.cs">
+      <DependentUpon>MisafirKargoTakibi.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MisafirKargoTakibi.aspx.designer.cs">
+      <DependentUpon>MisafirKargoTakibi.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MisafirAliciKayit.aspx.cs">
+      <DependentUpon>MisafirAliciKayit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MisafirAliciKayit.aspx.designer.cs">
+      <DependentUpon>MisafirAliciKayit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="OdemeSayfası.aspx.cs">
+      <DependentUpon>OdemeSayfası.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="OdemeSayfası.aspx.designer.cs">
+      <DependentUpon>OdemeSayfası.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Ozellikler.aspx.cs">
+      <DependentUpon>Ozellikler.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Ozellikler.aspx.designer.cs">
+      <DependentUpon>Ozellikler.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SatinAlGiris.aspx.cs">
+      <DependentUpon>SatinAlGiris.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SatinAlGiris.aspx.designer.cs">
+      <DependentUpon>SatinAlGiris.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Satis.aspx.cs">
+      <DependentUpon>Satis.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Satis.aspx.designer.cs">
+      <DependentUpon>Satis.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SifreGuncelle.aspx.cs">
+      <DependentUpon>SifreGuncelle.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SifreGuncelle.aspx.designer.cs">
+      <DependentUpon>SifreGuncelle.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SiparisOnaylama.aspx.cs">
+      <DependentUpon>SiparisOnaylama.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SiparisOnaylama.aspx.designer.cs">
+      <DependentUpon>SiparisOnaylama.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UyelikBilgileri.aspx.cs">
+      <DependentUpon>UyelikBilgileri.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UyelikBilgileri.aspx.designer.cs">
+      <DependentUpon>UyelikBilgileri.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="uyelik_sözlesmesi.aspx.cs">
+      <DependentUpon>uyelik_sözlesmesi.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="uyelik_sözlesmesi.aspx.designer.cs">
+      <DependentUpon>uyelik_sözlesmesi.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Cicekler.aspx.cs">
+      <DependentUpon>Cicekler.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Cicekler.aspx.designer.cs">
+      <DependentUpon>Cicekler.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="YenilebilirCicekler1.aspx.cs">
+      <DependentUpon>YenilebilirCicekler1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="YenilebilirCicekler1.aspx.designer.cs">
+      <DependentUpon>YenilebilirCicekler1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="yonetim\Admin.Master.cs">
+      <DependentUpon>Admin.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="yonetim\Admin.Master.designer.cs">
+      <DependentUpon>Admin.Master</DependentUpon>
+    </Compile>
+    <Compile Include="yonetim\AdminDuzenle.aspx.cs">
+      <DependentUpon>AdminDuzenle.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="yonetim\AdminDuzenle.aspx.designer.cs">
+      <DependentUpon>AdminDuzenle.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="yonetim\AdminEkle.aspx.cs">
+      <DependentUpon>AdminEkle.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="yonetim\AdminEkle.aspx.designer.cs">
+      <DependentUpon>AdminEkle.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="yonetim\AdminGoruntule.aspx.cs">
+      <DependentUpon>AdminGoruntule.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="yonetim\AdminGoruntule.aspx.designer.cs">
+      <DependentUpon>AdminGoruntule.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="yonetim\AdminLogin.aspx.cs">
+      <DependentUpon>AdminLogin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="yonetim\AdminLogin.aspx.designer.cs">
+      <DependentUpon>AdminLogin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="yonetim\Anasayfa.aspx.cs">
+      <DependentUpon>Anasayfa.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="yonetim\Anasayfa.aspx.designer.cs">
+      <DependentUpon>Anasayfa.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="yonetim\Bayiler.aspx.cs">
+      <DependentUpon>Bayiler.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="yonetim\Bayiler.aspx.designer.cs">
+      <DependentUpon>Bayiler.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="yonetim\DataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="yonetim\Filtreleme.aspx.cs">
+      <DependentUpon>Filtreleme.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="yonetim\Filtreleme.aspx.designer.cs">
+      <DependentUpon>Filtreleme.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="yonetim\Kategoriler.aspx.cs">
+      <DependentUpon>Kategoriler.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="yonetim\Kategoriler.aspx.designer.cs">
+      <DependentUpon>Kategoriler.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="yonetim\MailSend.aspx.cs">
+      <DependentUpon>MailSend.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="yonetim\MailSend.aspx.designer.cs">
+      <DependentUpon>MailSend.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="yonetim\Musteriler.aspx.cs">
+      <DependentUpon>Musteriler.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="yonetim\Musteriler.aspx.designer.cs">
+      <DependentUpon>Musteriler.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="yonetim\Rapor.aspx.cs">
+      <DependentUpon>Rapor.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="yonetim\Rapor.aspx.designer.cs">
+      <DependentUpon>Rapor.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="yonetim\SifremiUnuttum.aspx.cs">
+      <DependentUpon>SifremiUnuttum.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="yonetim\SifremiUnuttum.aspx.designer.cs">
+      <DependentUpon>SifremiUnuttum.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="yonetim\Siparisler.aspx.cs">
+      <DependentUpon>Siparisler.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="yonetim\Siparisler.aspx.designer.cs">
+      <DependentUpon>Siparisler.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="yonetim\Urunler.aspx.cs">
+      <DependentUpon>Urunler.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="yonetim\Urunler.aspx.designer.cs">
+      <DependentUpon>Urunler.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="yonetim\Yorumlar.aspx.cs">
+      <DependentUpon>Yorumlar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="yonetim\Yorumlar.aspx.designer.cs">
+      <DependentUpon>Yorumlar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="yonetim\yorumOnayla.aspx.cs">
+      <DependentUpon>yorumOnayla.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="yonetim\yorumOnayla.aspx.designer.cs">
+      <DependentUpon>yorumOnayla.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="yonetim\Report1.rdlc" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>49726</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:49726/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

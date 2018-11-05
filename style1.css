@@ -1,0 +1,22 @@
+﻿body {
+  background-image:url("images/loginbannerr.png");
+   background-repeat: no-repeat;
+  
+}
+.container {
+
+ 
+
+}
+.textbox{
+
+    border-radius:40px;
+}
+
+.tablo{
+    border:2px;
+    border-color:darkblue;
+    border-radius:40px;
+
+
+}

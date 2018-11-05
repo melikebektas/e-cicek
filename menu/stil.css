@@ -1,0 +1,112 @@
+* {
+ padding:0;
+ font-family: sans-serif;
+    margin-right: 6px;
+    margin-top: 0;
+    margin-bottom: 7px;
+}
+body {
+
+ background-size: 70px 120px;
+}
+nav {
+ padding-left:35px;
+ width: 794px;
+ height:3px;
+ margin: 40px auto 27px auto;
+ border-radius: 5px;
+ text-align: center;
+ background-color:#55255f;
+box-shadow:0px 0px 0 rgb(48,48,48),1px 1px 0 rgb(19,19,19),2px 2px 0 rgb(-10,-10,-10), 3px 3px 0 rgb(-39,-39,-39),4px 4px 3px rgba(0,0,0,0),4px 4px 1px rgba(0,0,0,0.5),0px 0px 3px rgba(0,0,0,.2);
+    padding-right: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+#menu a{
+ display: block;
+ color:#55255f;
+ text-decoration: none;
+ text-transform: uppercase;
+ font-family: Garamond, serif;
+ font-weight:bold;
+ border-radius: 3px;
+ font-size: 0.7em;
+ color:#55255f;
+ text-shadow: 2px 2px 3px rgba(255,255,255,0.1);
+    width: 138px;
+    height: 28px;
+}
+#menu > li {
+ float:left;
+ width:137px;
+ height: 42px;
+ line-height: 50px;
+ margin-top:-40px;
+ list-style:none;
+ position: relative; 
+ background-color:#367276;
+ -moz-border-radius: 5px 5px 0px 0px;
+ -webkit-border-radius: 5px 5px 0px 0px;
+ border-radius: 5px 5px 0px 0px;
+ -webkit-transition: all 1s;
+ -moz-transition: all 1s;
+ transition: all 1s;
+    top: 3px;
+    left: 44px;
+}
+#menu > li:hover {
+ color:#00ff90;
+ text-shadow: 0px 0px 2px rgba(0,0,0,0.5);
+ background-color:#367276;
+ height:64px;
+ margin-top: -54px;
+ box-shadow: 0em 0em 2em -.5em rgba(0,0,0, .5);
+ z-index: 3;
+ -webkit-transition: all 0.4s;
+ -moz-transition: all 0.4s;
+ transition: all 0.4s; 
+}
+#menu ul {
+ visibility:hidden;
+ position: absolute;
+ background-color:#00ff90;
+ border-radius: 3px;
+ padding-top:5px;
+ padding-bottom:5px;
+ width: 150px;
+ top:80px;
+ opacity: 0;
+ text-align: left;
+ -webkit-border-radius: 5px;
+ -moz-border-radius: 5px;
+ border-radius: 5px;
+ -webkit-transition: all 1s;
+ -moz-transition: all 1s;
+ transition: all 1s; 
+}
+#menu li:hover ul{
+ opacity: 1;
+ top: 64px;
+ visibility:visible;
+ -webkit-border-radius: 5px;
+ -moz-border-radius: 5px;
+ border-radius: 5px;
+}
+#menu ul li {
+ display: block;
+ position: relative;
+ -webkit-transition: all 1s;
+ -moz-transition: all 1s;
+ transition: all 1s;  
+}
+#menu ul li:hover {
+ display: block;
+ position: relative;
+ background-color:#367276;
+ -webkit-transition: all 1s;
+ -moz-transition: all 1s;
+ transition: all 1s;  
+}
+#menu ul li a {
+ padding-left: 30px;
+}

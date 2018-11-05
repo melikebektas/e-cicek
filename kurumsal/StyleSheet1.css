@@ -1,0 +1,15 @@
+﻿@import url('StyleSheet1.css');
+body {
+    background-image: url('Resimler/cicekkk.png');
+    background-size: cover;
+    background-attachment: scroll;
+    background-color: white;
+    background-repeat: no-repeat;
+}
+
+
+
+.oval {
+
+    border-radius:8px 8px;
+}

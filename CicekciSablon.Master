@@ -1,0 +1,167 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="CicekciSablon.master.cs" Inherits="AspCicekci.CicekciSablon" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<meta charset="utf-8">
+<meta name="robots" content="noindex, nofollow">
+    <link href="menu/stil.css" rel="stylesheet" />
+  
+    <link href="sablon_stil.css" rel="stylesheet" />
+   
+    <style type="text/css">
+        .auto-style1 {
+            text-align: right;
+            height: 52px;
+        }
+        .auto-style2 {
+            position: absolute;
+            top: 6px;
+            left: 14px;
+            z-index: 1;
+            }
+        .auto-style3 {
+            height: 200px;
+            text-align: center;
+        }
+        .auto-style4 {
+            color: #FFFFFF;
+            position: absolute;
+            top: 159px;
+            left: 624px;
+            z-index: 1;
+        }
+        .auto-style5 {
+            height: 200px;
+            color: #FFFFFF;
+            text-align: center;
+        }
+        .auto-style6 {
+            position: relative;
+            left: 2px;
+            top: -21px;
+             border-radius:40px;
+            margin-bottom: 7px;
+        }
+        .auto-style7 {
+            left: 135px;
+            top: 17px;
+        }
+        .auto-style8 {
+            margin-left: 66px;
+        }
+    p.MsoNormal
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:8.0pt;
+	margin-left:0cm;
+	line-height:107%;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;
+	}
+    </style>
+   
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div style="text-align: left;" class="container1 ">
+     <div class="auto-style1" style="background-image: url('/images/ustbanner.png'); background-repeat: no-repeat">
+
+         <asp:Label ID="Label1" runat="server" CssClass="auto-style2"></asp:Label>
+         <asp:TextBox ID="TextBox1" runat="server" Height="23px" Width="198px" CssClass="auto-style6" ></asp:TextBox>
+         <asp:ImageButton ID="ImageButton5" runat="server" Height="31px" ImageUrl="~/images/Search Black.png" Width="39px" OnClick="ImageButton5_Click" />
+         <asp:ImageButton ID="ImageButton6" runat="server" Height="40px" ImageUrl="~/images/1494259211_user_profile.png" OnClick="ImageButton6_Click" Width="37px" />
+         <asp:ImageButton ID="ImageButton4" runat="server" Height="38px" ImageUrl="~/images/Login_out.png"  OnClick="ImageButton4_Click1" Width="37px" ToolTip="Ç&#305;k&#305;&#351;" />
+
+         <asp:ImageButton ID="ImageButton1" runat="server" Height="37px" ImageUrl="~/images/Login_in.png" Width="35px"  OnClick="ImageButton1_Click1" ToolTip="Giri&#351;" />
+         &nbsp;
+         <asp:ImageButton ID="ImageButton2" runat="server" Height="41px" ImageUrl="~/images/truck-icon (1).png" Width="37px" OnClick="ImageButton2_Click" ToolTip="Kargo" />
+
+     </div>
+        <div class="auto-style3" style="background-image: url('/images/bannerson.png'); background-repeat: no-repeat">
+
+
+         <asp:Label ID="Label2" runat="server" Text="Label" CssClass="auto-style4"></asp:Label>
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+
+        </div>
+        <div>
+  <nav>
+ <ul id="menu" class="auto-style8">
+
+   <li class="auto-style7"><a href="Default.aspx">ANASAYFA <li class="menu2"><a href="Cicekler1.aspx">Ç&#304;ÇEKLER</a>
+       <ul>
+         <li><a href="Cicekler.aspx">Seni Seviyorum</a></li>
+         <li><a href="Cicekler.aspx">Do&#287;um Günü</a></li>
+         <li><a href="Cicekler.aspx">Ho&#351;geldin Bebek</a></li>
+         <li><a href="ButikCicekler.aspx">Butik Çiçekler</a></li>
+         <li><a href="Cicekler.aspx">&#304;çimden Geldi</a></li>
+          <li><a href="MeyveSepeti.aspx">Meyve Sepeti</a></li>
+         <li><a href="Cicekler.aspx">Söz/Ni&#351;an/Dü&#287;ün</a></li>
+          <li><a href="Cicekler.aspx">Yeni &#304;&#351;</a></li>
+           <li><a href="Cicekler.aspx">Geçmi&#351; Olsun</a></li>
+       </ul></li> 
+   <li class="menu3"><a href="YenilebilirCicekler1.aspx">Yenilebilir Çiçekler</a>
+       <ul>
+         <li><a href="YenilebilirCicekler1.aspx">Seni Seviyorum</a></li>
+         <li><a href="YenilebilirCicekler1.aspx">Do&#287;um Günü</a></li>
+         <li><a href="YenilebilirCicekler1.aspx">&#304;çimden Geldi</a></li>
+         <li><a href="YenilebilirCicekler1.aspx">Söz/Ni&#351;an/Dü&#287;ün</a></li>
+          <li><a href="YenilebilirCicekler1.aspx">Yeni &#304;&#351;</a></li>
+           <li><a href="YenilebilirCicekler1.aspx">Geçmi&#351; Olsun</a></li>
+       </ul> 
+     </li>
+     <li class="menu4"><a href="Aksesuar.aspx">Ki&#351;iye Özel</a>
+     
+     </li> 
+     
+     </li> 
+ </ul>
+</nav>
+
+    </div>
+
+        <div >
+     
+        
+     
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+     
+        
+     
+    </div>
+      <div class="auto-style5" style="background-image: url('/images/footer.png'); background-repeat: no-repeat;">
+
+          <br />
+          <br />
+          <br />
+          <br />
+
+          Copytright © 2017 Çiçekçim &#304;nternet Hizmetleri A.&#350;
+             
+          <br />
+          Bize Kat&#305;l&#305;n :
+          <asp:HyperLink ID="HyperLink2" runat="server" ImageUrl="~/images/F_icon.png" ImageWidth="30px" NavigateUrl="https://www.facebook.com/%C3%87i%C3%A7ek%C3%A7im-639240459600615/">HyperLink</asp:HyperLink>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+             
+</div>
+        
+     
+    </div>
+    </form>
+</body>
+</html>
